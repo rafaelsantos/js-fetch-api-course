@@ -1,29 +1,20 @@
-const customers = [
-    {
-        cpf: 18875539081,
-        name: "Mark"
-    },
-    {
-        cpf: 18867539081,
-        name: "Paul"
-    }
-]
-
-const tableBody = document.querySelector("[data-content-table]")
-
-const showCustomers = (cpf, name) => {
-    const line = document.createElement('tr')
-
+const listCustomers = (cpf, nome) => {
+    const line = document.createElement("tr");
+  
     const content = `
         <td>${cpf}</td>
-        <td>${name}</td>
-    `
-
-    line.innerHTML = content
-
-    return line
-}
-
-customers.forEach(customer => {
-    tableBody.appendChild(showCustomers(customer.cpf, customer.name))
-})
+        <td>${nome}</td>
+    `;
+  
+    line.innerHTML = content;
+  
+    return line;
+  };
+  
+  const table = document.querySelector("[data-content-table]");
+  
+  getCustomers().then(customers => {
+    customers.forEach(customer => {
+        table.appendChild(listCustomers(customer.cpf, customer.nome));
+    });
+  });
