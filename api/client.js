@@ -1,4 +1,5 @@
 const url = "http://localhost:4000/clientes"
+const urlPost = "http://localhost:4000/clientes/cliente"
 
 const getCustomers = () => {
     return fetch(url, {
@@ -17,7 +18,7 @@ const saveCustomer = (nome, cpf) => {
     nome: nome,
     cpf: cpf
   })
-  return fetch(url, {
+  return fetch(urlPost, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json'
