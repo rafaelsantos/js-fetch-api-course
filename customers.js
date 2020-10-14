@@ -11,6 +11,9 @@ const listCustomers = (cpf, nome, id) => {
         <td>${cpf}</td>
         <td>${nome}</td>
         <button type="button" class="btn btn-danger" onclick="removeCustomer(${id})">Remove</button>
+        <a href="edit.html">
+          <button type="button" class="btn btn-info">Edit</button>
+        </a>
     `;
   
     line.innerHTML = content;
