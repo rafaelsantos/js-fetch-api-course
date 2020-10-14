@@ -7,5 +7,9 @@ form.addEventListener("submit", event => {
     const nome = event.target.querySelector('[data-nome]')
     const cpf = event.target.querySelector('[data-cpf]')
 
-    saveCustomer(nome.value, cpf.value)
+    if(validateCPF(cpf.value)) {
+        saveCustomer(nome.value, cpf.value)
+    } else {
+        alert('CPF is not valid!')
+    }
 })
