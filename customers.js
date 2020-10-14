@@ -1,9 +1,16 @@
-const listCustomers = (cpf, nome) => {
+const removeCustomer = id => {
+  if(confirm("Remove customer?")) {
+    deleteCustomer(id)
+  }
+}
+
+const listCustomers = (cpf, nome, id) => {
     const line = document.createElement("tr");
   
     const content = `
         <td>${cpf}</td>
         <td>${nome}</td>
+        <button type="button" class="btn btn-danger" onclick="removeCustomer(${id})">Remove</button>
     `;
   
     line.innerHTML = content;
@@ -15,6 +22,6 @@ const listCustomers = (cpf, nome) => {
   
   getCustomers().then(customers => {
     customers.forEach(customer => {
-        table.appendChild(listCustomers(customer.cpf, customer.nome));
+        table.appendChild(listCustomers(customer.cpf, customer.nome, customer.id));
     });
   });

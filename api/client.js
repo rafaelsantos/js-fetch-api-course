@@ -1,5 +1,6 @@
 const url = "http://localhost:4000/clientes"
 const urlPost = "http://localhost:4000/clientes/cliente"
+const urlDelete = "http://localhost:4000/clientes/cliente/id"
 
 const getCustomers = () => {
     return fetch(url, {
@@ -27,5 +28,11 @@ const saveCustomer = (nome, cpf) => {
   })
   .then(response => {
     return response.body
+  })
+}
+
+const deleteCustomer = id => {
+  return fetch(`http://localhost:4000/clientes/cliente/${id}`, {
+    method: "DELETE"
   })
 }
