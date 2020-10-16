@@ -45,3 +45,17 @@ const getCustomer = id => {
     return response.json()
   })
 }
+
+const updateCustomer = (id, cpf, name) => {
+  const json = JSON.stringify({
+    nome: name,
+    cpf: cpf
+  })
+  return fetch(`http://localhost:4000/clientes/cliente/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body: json
+  })
+}
