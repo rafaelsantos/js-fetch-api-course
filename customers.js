@@ -1,6 +1,7 @@
 const removeCustomer = id => {
   if(confirm("Remove customer?")) {
     deleteCustomer(id)
+    document.location.reload()
   }
 }
 
