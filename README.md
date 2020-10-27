@@ -4,14 +4,13 @@ This repository demonstrates basic features of Fetch API using Java Script
 
 ## Getting Started
 
-This repository has 5 distinct and very important branches:
+This repository has 4 distinct and very important branches:
 
 | Branch | Description |
 | --- | --- |
 | [basic-project](https://github.com/rafaelsantos/js-fetch-api-course/tree/feature/js-fetch-api-course-basic-project) | This branch presents the creation of basic Java Script project. |
 | [api-fetch](https://github.com/rafaelsantos/js-fetch-api-course/tree/feature/js-fetch-api-course-api-fetch) | [This branch demonstrates how-to consume an API route using Fetch API to fetch data **(GET method)**.](https://github.com/rafaelsantos/js-fetch-api-course/commit/0f1a5a8d35e3805fa05118e0a55694c8841f56d1) |
 | [api-post](https://github.com/rafaelsantos/js-fetch-api-course/tree/feature/js-fetch-api-course-api-post) | [This branch demonstrates how-to consume an API route using Fetch API to save data **(POST method)**.](https://github.com/rafaelsantos/js-fetch-api-course/commit/eef0ed71ea3401b8ca2b8cbb9193f554bac6966b) |
-| [api-update](https://github.com/rafaelsantos/js-fetch-api-course/tree/feature/js-fetch-api-course-api-update) | [This branch demonstrates how-to consume an API route using Fetch API to update data **(PUT method)**.](https://github.com/rafaelsantos/js-fetch-api-course/commit/a887cba41ed04829c50058263db11f98729a87c8) |
 | [api-delete](https://github.com/rafaelsantos/js-fetch-api-course/tree/feature/js-fetch-api-course-api-delete) | [This branch demonstrates how-to consume an API route using Fetch API to remove data **(DELETE method)**.](https://github.com/rafaelsantos/js-fetch-api-course/commit/084911c05225cda7fde9dd80f4479afd345045d4) |
 
 The [master](https://github.com/rafaelsantos/js-fetch-api-course/tree/master) and [developer](https://github.com/rafaelsantos/js-fetch-api-course/tree/develop) branchs are synchronized with all branches
