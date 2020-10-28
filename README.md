@@ -29,4 +29,18 @@ $ cd js-fetch-api-course/server
 $ npm install && npm start
 ```
 
+If you have problems running the **npm start** command:
+
+```sh
+$ npm start
+$ sh: 1: nodemon: not found
+$ npm ERR! aaa@0.0.1 start: `nodemon server.js`
+```
+You can resolve this problem by adding **nodemon** to your **package.json**. The problem happens when **nodemon** does not exist in **/node_modules/.bin**. 
+Just run the command below:
+
+```sh
+$ npm install nodemon --save-dev
+```
+
 Any questions, don´t hesitate to contact me at [here](mailto:santos.rafaelbs@gmail.com)
